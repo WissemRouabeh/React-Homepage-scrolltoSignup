@@ -6,6 +6,7 @@
   padding: 19px;
   display: flex;
   height: max-content;
+  /* qs */
 }
 .logincomplete__ligne input[type="text"],
 .logincomplete__ligne input[type="password"] {
