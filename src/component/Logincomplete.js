@@ -1,11 +1,16 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./logincomplete.css";
 
 import { Formik } from "formik";
 import * as yUp from "yup";
+import { useDispatch } from "react-redux";
+import { signin, signin_user } from "../redux_files/actions";
 import Button from "@material-ui/core/Button";
 import PolymerIcon from "@material-ui/icons/Polymer";
 function Logincomplete() {
+  // redux part
+  const dispatch = useDispatch();
+
   // formik part
 
   const formschema = yUp.object().shape({
@@ -38,12 +43,12 @@ function Logincomplete() {
       )
       .required("Champ obligatoire"),
     //   champs jdod
-    ad_local: yUp.string().required("Champ obli9atoire"),
-    region: yUp.string().required("Champ obli9atoire"),
-    cd_postale: yUp.string().required("Champ obli9atoire"),
-    n_tlf: yUp.string().required("Champ obli9atoire"),
-    region: yUp.string().required("Champ obli9atoire"),
-    spec: yUp.string().required("Champ obli9atoire"),
+    // ad_local: yUp.string().required("Champ obli9atoire"),
+    // region: yUp.string().required("Champ obli9atoire"),
+    // cd_postale: yUp.string().required("Champ obli9atoire"),
+    // n_tlf: yUp.string().required("Champ obli9atoire"),
+    // region: yUp.string().required("Champ obli9atoire"),
+    // spec: yUp.string().required("Champ obli9atoire"),
   });
 
   return (
@@ -59,6 +64,13 @@ function Logincomplete() {
       }}
       onSubmit={(infos) => {
         console.log(infos);
+        dispatch(signin());
+        dispatch(
+          signin_user({
+            email: infos.email,
+            pwd: infos.password,
+          })
+        );
       }}
       validationSchema={formschema}
     >

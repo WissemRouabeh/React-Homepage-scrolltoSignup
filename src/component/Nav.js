@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import "./nav.css";
 import Droplogin from "./Droplogin.js";
 import Button from "@material-ui/core/Button";
+import { useSelector } from "react-redux";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import PolymerIcon from "@material-ui/icons/Polymer";
 function Nav({ scrolled, scrolledhalf }) {
+  // redux part
+  const isLogged = useSelector((state) => state.isLogged);
+  const loggeduser = useSelector((state) => state.loggeduser);
+
   // rayen howa eli khdamha
   const [showdroplogin, setShowdroplogin] = useState(false);
   return (
@@ -37,9 +42,9 @@ function Nav({ scrolled, scrolledhalf }) {
             setShowdroplogin(true);
           }}
         >
-          <p>Mon espace</p>
+          {isLogged ? <p> {loggeduser.email} </p> : <p>Mon espace</p>}
           <AccountCircleIcon className="nav__logoaccount" />
-          {showdroplogin && <Droplogin />}
+          {!isLogged && showdroplogin && <Droplogin />}
         </div>
       </div>
     </div>
