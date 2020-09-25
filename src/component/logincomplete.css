@@ -1,8 +1,9 @@
 .logincomplete__container {
+  /* gitu */
   border: rgba(148, 61, 163, 0.7) 1px solid;
   box-shadow: 1px 4px 20px rgba(148, 61, 163, 0.7);
   border-radius: 5px;
-  padding: 20px;
+  padding: 19px;
   display: flex;
   height: max-content;
 }
