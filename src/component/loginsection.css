@@ -1,0 +1,44 @@
+.loginsection__container {
+  border: rgba(148, 61, 163, 0.7) 1px solid;
+  box-shadow: 1px 4px 20px rgba(148, 61, 163, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+}
+.loginsection__ligne input[type="text"],
+.loginsection__ligne input[type="password"] {
+  width: 350px;
+  height: 27px;
+  border: thistle 0.5px solid;
+  margin: 3px 0;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 5px;
+}
+.loginsection__btnconnect {
+  background-color: rgba(148, 61, 163, 0.7) !important;
+  color: rgba(255, 255, 255, 0.973) !important;
+  margin-top: 40px !important;
+  margin-right: 10px !important;
+}
+.loginsection__btnback {
+  border: 1px solid rgba(148, 61, 163, 0.7) !important;
+  color: rgba(148, 61, 163, 0.7) !important;
+  margin-top: 40px !important;
+}
+.loginsection__logo {
+  margin: 2vh 0;
+  color: rgba(148, 61, 163, 0.7) !important;
+  font-size: 40px !important;
+  transform: rotate(0deg);
+  transition: transform 1s !important;
+}
+.loginsection__ligne {
+  margin-top: 15px;
+}
+.loginsection__ligne input[type="text"]:hover,
+.loginsection__ligne input[type="password"]:hover {
+  box-shadow: 1px 1px 4px rgb(209, 170, 209);
+}
+.loginsection__logo:hover {
+  transform: rotate(180deg) !important;
+}

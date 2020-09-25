@@ -1,0 +1,53 @@
+.logincomplete__container {
+  border: rgba(148, 61, 163, 0.7) 1px solid;
+  box-shadow: 1px 4px 20px rgba(148, 61, 163, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  height: max-content;
+}
+.logincomplete__ligne input[type="text"],
+.logincomplete__ligne input[type="password"] {
+  width: 350px;
+  height: 27px;
+  border: thistle 0.5px solid;
+  margin: 3px 0;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 5px;
+}
+.logincomplete__btnconnect {
+  background-color: rgba(148, 61, 163, 0.7) !important;
+  color: rgba(255, 255, 255, 0.973) !important;
+  margin-top: 40px !important;
+  margin-right: 10px !important;
+}
+.logincomplete__btnback {
+  border: 1px solid rgba(148, 61, 163, 0.7) !important;
+  color: rgba(148, 61, 163, 0.7) !important;
+  margin-top: 40px !important;
+}
+.logincomplete__logo {
+  margin: 2vh 0;
+  color: rgba(148, 61, 163, 0.7) !important;
+  font-size: 40px !important;
+  transform: rotate(0deg);
+  transition: transform 1s !important;
+}
+.logincomplete__ligne {
+  margin-top: 15px;
+}
+.logincomplete__ligne input[type="text"]:hover,
+.logincomplete__ligne input[type="password"]:hover {
+  box-shadow: 1px 1px 4px rgb(209, 170, 209);
+}
+.logincomplete__logo:hover {
+  transform: rotate(180deg) !important;
+}
+.logincomplete_separator {
+  width: 1px;
+  box-shadow: 0px 0px 3px 0.5px rgb(209, 170, 209);
+  height: 300px;
+  margin: auto 10px;
+  background-color: rgba(252, 213, 252, 0.15);
+}

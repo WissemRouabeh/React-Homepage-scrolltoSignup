@@ -1,0 +1,48 @@
+.droplogin__container {
+  position: absolute;
+  box-shadow: 2px 2px 15px rgba(191, 185, 192, 0.24);
+  top: 30px;
+  left: -150px;
+  padding: 25px 10px 10px 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.droplogin__btn {
+  height: 32px;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  width: fit-content;
+  margin: 5px !important;
+  float: right !important;
+  background-color: rgba(191, 185, 192, 0.24) !important;
+  white-space: nowrap;
+  background-color: rgba(148, 61, 163, 0.7) !important;
+  color: white !important;
+  margin-top: 3vh !important;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox > input {
+  margin: 5px;
+  margin-bottom: -0.5px;
+}
+.droplogin__ligne p {
+  font-size: 13px;
+  font-weight: 600;
+}
+.droplogin__ligne input[type="text"],
+.droplogin__ligne input[type="password"] {
+  width: 250px;
+  height: 25px;
+  border: thistle 0.5px solid;
+  margin: 5px 0;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 5px;
+}
+.droplogin__ligne input[type="text"]:hover,
+.droplogin__ligne input[type="password"]:hover {
+  box-shadow: 0px 0px 4px rgb(209, 170, 209);
+}
